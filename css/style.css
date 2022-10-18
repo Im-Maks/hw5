@@ -1,44 +1,110 @@
 body{
     margin: 0 auto;
     padding: 0;
-    background-color: darkblue;
+    background-color: #37517e;
 }
 
+.container{
+    width: 100%;
+    min-height: 2800px;
+}
+
+.nav_up{
+    width: 100%;
+    height: 32px;
+    background: #023b6d;
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    float: left;
+    top: 0px;
+    z-index: 1;
+}
+.nav_pic{
+    width: 178px;
+    min-height: inherit;
+    margin: 0px 10px;
+}
+
+.desk{
+    color: white;
+    margin: 0px 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.tablet{
+    color: gray;
+    cursor: pointer;
+    font-size: 23px;
+    transition: 1s;
+}
+.tablet i:hover{
+    color: white;
+}
+.phone{
+    color: gray;
+    margin: 0px 16px;
+    cursor: pointer;
+    font-size: 26px;
+    transition: 1s;
+}
+.phone i:hover{
+    color: white;
+}
 .navbar{
     width: 100%;
-    min-height: 130px;
+    min-height: 60px;
     float: left;
-
-    /* background: red; */
+    position: fixed;
+    position: relative;
+    margin: 50px 0px 0px 0px;
+}
+.angl{
+    color: lightblue;
+    margin: 0px 0px 0px 465px;
+    font-size: 20px;
+}
+.a1{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0px 0px 0px 20px;
+    font-family: "Jost", sans-serif;
+}
+.angr{
+    color: lightblue;
+    margin: 0px 0px 0px 20px;
+    font-size: 20px;
 }
 .logo{
-    width: 25%;
-    min-height: inherit;
+    width: 20%;
+    height: 40px;
     background: transparent;
     color: white;
-    font-size: 70px;
+    font-family: "Jost", sans-serif;
+    position: absolute;
     float: left;
-    /* border: 2px solid lightblue; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: red; */
+    position: fixed;
 }
 
-
-.menu{
-    width: 75%;
-    min-height: inherit;
+.nav_menu{
+    width: 80%;
+    height: 40px;
     background: transparent;
+    position: absolute;
     float: left;
-    /* border: 2px solid lightblue; */
+    right: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    /* background: green; */
+    position: fixed;
 }
 
-.menu ul{
+.nav_menu ul{
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -46,18 +112,19 @@ body{
     align-items: center;
 }
 
-.menu ul li{
+.nav_menu ul li{
     list-style-type: none;
     float: left;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 11px;
     margin: 0px 8px;
     color: white;
-    font-size: 20px;
+    font-size: 14px;
+    font-family: "Jost", sans-serif;
     transition: 0.6s;
 }
 
-.menu ul li:hover {
+.nav_menu ul li:hover {
     color: lightblue;
     cursor: pointer;
     box-sizing: border-box;
@@ -66,10 +133,81 @@ body{
 .start{
     width: 120px;
     height: 35px;
-    background-color: darkblue;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid lightblue;
     border-radius: 30px;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+}
+
+.content{
+    width: 600px;
+    position: absolute;
+    top: 213px;
+    left: 110px;
+}
+.f_heading{
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Jost", sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+.s_heading{
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Jost", sans-serif;
+    font-weight: bolder;
+    color: rgb(149, 154, 181);
+    padding: 20px 0px;
+}
+.start1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 110px;
+    top: 460px;
+    width: 135px;
+    height: 42px;
+    color: white;
+    background-color: rgb(71, 181, 218);
+    font-size: 15px;
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.vid{
+    position: absolute;
+    left: 280px;
+    top: 468px;
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.m_pic{
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    animation: infinite;
+    animation-name: pic;
+    animation-duration: 5s;
+}
+
+.pic{
+    width: 636px;
+    height: 526px;
+}
+
+@keyframes pic{
+    0%   {top:90px; right: 100px;}
+    50%  {top:140px; right: 100px;}
+    100% {top:90px; right: 100px;}
 }
